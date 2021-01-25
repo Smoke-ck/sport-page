@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+.body {
+  font-family:'ProximaNova';
+  min-width: 320px;
+}
+$primory_color:#5e42b0;
+$primory_title_color:#e7e7e7;
+$secondary_title_color:#c1c1c1;
+@import "fonts";
+
+@import "header";
+@import "football-basketball";
+@import "cards";
+@import "download";

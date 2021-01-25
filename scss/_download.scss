@@ -1,0 +1,153 @@
+.download {
+    background-image: url(../img/fon/download.jpg);
+    height: 959px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 795px;
+    }
+    &__heading {
+        margin-top: 233px;
+        margin-left: 200px;
+        margin-bottom: 163px;
+        position: relative;
+    }
+   
+    &__title {
+        font-size: 90px;
+        line-height: 90px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        margin-bottom: 10px;
+        position: relative;
+        &::before {
+            content: url("../img/icon/artwork_1261.png");
+            left: -50px;
+            position:absolute;
+            left:-166px;
+            top:-20px;
+        }
+    }
+    &__line {
+        position: absolute;
+        left:365px;
+        top:-105px;
+        &--small {
+            left: 20px;
+            top:-40px;
+        }
+    }
+    &__description {
+        font-size: 36px;
+        line-height: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #a496ca;
+        padding-left: 3px;
+        position: relative;
+    }
+}
+.footer {
+    background: rgb(10, 14, 52,0.6);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    height: 168px;
+    &__description {
+        justify-self:end;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        margin-right: 60px;
+        display: flex;
+        &--link {
+            text-decoration: none;
+        }
+        &--link:first-child {
+            margin-right: 0;
+        }
+    }
+    &__logo {
+        justify-self:start;
+        margin-left: 50px;
+    }
+    &__icon {
+        display: flex;
+        &--brand {
+          margin-right: 40px;
+        }
+    }
+}
+@media(max-width:1531px) {
+    .download {
+        &__heading {
+            margin-top: 347px;
+            margin-left:0;
+            margin-bottom: 198px;
+            position: relative;
+        }
+        &__title {
+            font-size: 80px;
+            line-height: 80px;
+            &::before {
+                top:-220px;
+                left: 274px;
+            }
+        }
+    }
+    .footer {
+        &__logo {
+            display: none;
+        }
+        &__description {
+            display: none;
+        }
+        &__icon {
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    }
+}
+@media(max-width:767px) {
+    .download {
+        &__content {
+            height: 515px;
+        }
+        height: 568px;
+        &__line {
+            display: none;
+        }
+        &__heading {
+            margin-top: 232px;
+            margin-bottom: 72px;
+        }
+        &__title {
+            font-size: 34px;
+            line-height: 1.2;
+            &::before {
+                content: url("../img/icon/vektornyy_smart_obekt_93.png");
+                left:107px;
+                top:-140px;
+            }
+        }
+        &__description {
+            font-size: 15px;
+            line-height: 1.2;
+        }
+    }
+    .footer {
+        height: 50px;
+        grid-template-columns:0;
+
+    }
+}
